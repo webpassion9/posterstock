@@ -1,0 +1,35 @@
+// fonts
+$fontBase: Montserrat, Arial, sans-serif;
+$fontSec: SF, Arial, sans-serif;
+$fontThird: "SF Pro Display", Arial, sans-serif;
+
+// colors
+:root {
+	--color-white: #FFFFFF;
+	--color-black: #212121;
+	--color-gray: #BDBDBD;
+	--color-gray-light: #f2f2f2;
+	--color-gray-light2: #FAFAFA;
+	--color-gray-dark: hsl(0, 0%, 52%);
+	--color-blue: #3390EC;
+}
+
+// breakpoints
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$hd: 1600px;
+
+$col-size: 44px;
+
+// grid
+$site-width: 1587px;
+$column-gap-large: 40px;
+$column-gap-base: 30px;
+$column-gap-small: 20px;
+$column-gap-mobile: 13px;
+
+

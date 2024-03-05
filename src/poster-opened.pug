@@ -1,0 +1,126 @@
+include html/mixins
+
+doctype html
+block head
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+		title Posterstock
+
+		meta(property="og:title" content="Posterstock")
+		meta(property="og:description" content="A social media designed for creating poster collections, and following friends and influencers.")
+		meta(property="og:image" content="img/opengraph.png")
+		meta(property="og:url" content="https://posterstock.co")
+		meta(property="og:type" content="website")
+
+		link(rel="stylesheet", href="css/style.min.css")
+		link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+		link(rel="manifest" href="site.webmanifest")
+
+		// Google Tag Manager
+		script.
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-NGR8BSQ');
+		// End Google Tag Manager
+	body
+		// Google Tag Manager (noscript)
+		noscript
+			iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-NGR8BSQ" height="0" width="0" style="display:none;visibility:hidden")
+		// End Google Tag Manager (noscript)
+		
+		.wrapper
+			.container.grid-container.grid-container-main
+				aside.aside
+					.logo
+						a(href="https://posterstock.co")
+							img(src="img/logo.svg", width="34" height="46" alt="")
+					.banner
+						img(src="img/ad.jpg", alt="") 
+				main.content
+					section
+						.poster-opened.grid-container.grid-container-15
+							.poster-opened__info.grid-container.grid-container-15
+								.poster-opened__info-main.grid-container.grid-container-14
+									.poster-opened__info-avatar
+										.poster-opened__info-avatar-inner
+											img(src="img/avatar.png", alt="")
+									.poster-opened__info-main-details
+										.poster-opened__info-main-top
+											.poster-opened__info-author Kaylynn Westervelt
+											.poster-opened__info-date 1:31 PM
+												span.is-md-visible , Jan 24,2022
+										.poster-opened__info-username @Kaylynn Westervelt
+								.user-menu.is-lg-visible
+									.user-menu__btn
+										+sprite("icon-menu")
+									ul.user-menu__main
+										li
+											a(href="#") Follow Kaylynn Westervelt
+										li
+											a(href="#") Follow
+										li
+											a(href="#") Copy poster link
+							.poster-opened__main-photo
+								img(src="img/poster_john-wick.jpg", alt="")
+							.poster-opened__main-details
+								.poster-opened__main-heading John Wick
+								.poster-opened__main-date 2014
+								p With the untimely death of his beloved wife still bitter in his mouth, John Wick, the expert former assassin, receives one final gift from hera precious keepsake to help John Wick.
+								.data-btns
+									a(href="#").btn.btn-data
+										span.btn-data__icon.for-default
+											+sprite("icon-heart")
+										span.btn-data__icon.for-active
+											+sprite("icon-heart_filled")
+										| 12
+									a(href="#").btn.btn-data
+										span.btn-data__icon.for-default
+											+sprite("icon-message")
+										| 3
+					hr.is-lg-hidden
+					section.section-comments.section-comments_poster-page.grid-container.grid-container-15
+						.comment.grid-container.grid-container-12
+							.comment__info.grid-container.grid-container-12
+								.comment__info-avatar
+									.comment__info-avatar-inner
+										img(src="img/avatar.png", alt="")
+								.comment__info-details
+									.comment__info-details-top
+										.comment__info-author Kaylynn Westervelt
+										.comment__info-date 35m
+									.comment__info-username @Kaylynn Westervelt
+							.comment__text
+								p Why u say USB 3 is required when the Facecam is 100% plugged into a USB 3 port with a USB 3 cable?
+						.comment.grid-container.grid-container-12
+							.comment__info.grid-container.grid-container-12
+								.comment__info-avatar
+									.comment__info-avatar-inner
+										img(src="img/avatar.png", alt="")
+								.comment__info-details
+									.comment__info-details-top
+										.comment__info-author Kaylynn Westervelt
+										.comment__info-date 35m
+									.comment__info-username @Kaylynn Westervelt
+							.comment__text
+								p Why u say USB 3 is required when the Facecam is 100% plugged into a USB 3 port with a USB 3 cable?
+						.comment.grid-container.grid-container-12
+							.comment__info.grid-container.grid-container-12
+								.comment__info-avatar
+									.comment__info-avatar-inner
+										img(src="img/avatar.png", alt="")
+								.comment__info-details
+									.comment__info-details-top
+										.comment__info-author Kaylynn Westervelt
+										.comment__info-date 35m
+									.comment__info-username @Kaylynn Westervelt
+							.comment__text
+								p Why u say USB 3 is required when the Facecam is 100% plugged into a USB 3 port with a USB 3 cable?
+
+		script(src="js/app.min.js")

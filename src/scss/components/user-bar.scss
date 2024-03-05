@@ -1,0 +1,238 @@
+.section-head-profile {
+	padding-bottom: 20px;
+	@media (min-width: $lg) {
+		padding-top: 27px;
+	}
+	@media (min-width: $lg) {
+		padding-bottom: 40px;
+	}
+}
+
+.profile-heading {
+	text-align: center;
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: -0.408px;
+	
+}
+
+.user-bar {
+	position: relative;
+	@media (max-width: $lg - 1px) {
+		padding-top: 7px;
+	}
+	@media (min-width: $lg) {
+		align-items: center;
+	}
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	right: 100%;
+	// 	height: 1px;
+	// 	bottom: -1px;
+	// 	background: var(--color-gray-light);
+	// 	width: $column-gap-mobile;
+	// 	@media (min-width: $lg) {
+		// 		width: $column-gap-small;
+		// 	}
+		// 	@media (min-width: $xl) {
+			// 		width: $column-gap-base;
+			// 	}
+	// 	@media (min-width: $site-width) {
+	// 		width: $column-gap-large;
+	// 	}
+	// }
+	&__main {
+		grid-column: span 5;
+		display: flex;
+		flex-direction: column;
+		-webkit-row-gap: 10px;
+		row-gap: 10px;
+		@media (min-width: $lg) {
+			flex-direction: row;
+			align-items: center;
+			-webkit-column-gap: 27px;
+			column-gap: 27px;
+			grid-column: span 6;
+		}
+		&__avatar {
+			border-radius: 100%;
+			overflow: hidden;
+			flex-shrink: 0;
+			width: 80px;
+			height: 80px;
+			@media (min-width: $lg) {
+				width: 128px;
+				height: 128px;
+				$avatar-size: 80px;
+				@media (min-width: $lg) {
+					$avatar-size: 128px;
+				}
+			}
+			img, picture {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__info {
+			grid-column: span 4;
+			display: flex;
+			flex-direction: column;
+			-webkit-gap: 8px;
+			gap: 8px;
+			@media (max-width: $lg - 1px) {
+				min-width: 200px;
+			}
+		}
+		&__name {
+			font-size: 17px;
+			line-height: 22px;
+			font-weight: 700;
+			letter-spacing: -0.408px;
+			@media (min-width: $lg) {
+				font-size: 24px;
+				line-height: 32px;
+				letter-spacing: 0.25px;
+			}
+		}
+		&__username {
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--color-gray-dark);
+		}
+		&__data {
+			display: flex;
+			-webkit-gap: 15px;
+			gap: 15px;
+			@media (min-width: $lg) {
+				padding-top: 6px;
+				-webkit-gap: 19px;
+				gap: 19px;
+			}
+			&-item {
+				display: flex;
+				align-items: center;
+				font-size: 12px;
+				line-height: 16px;
+				@media (min-width: $lg) {
+					font-size: 14px;
+					line-height: 16px;
+				}
+				&-icon {
+					flex-shrink: 0;
+					margin-right: 6px;
+					line-height: 0;
+					transform: scale(.9);
+					transform-origin: 0 0;
+					@media (min-width: $lg) {
+						margin-right: 10px;
+						transform: none;
+					}
+				}
+			}
+		}
+	}
+	&__data {
+		grid-column: span 6;
+		@media (max-width: $lg - 1px) {
+			padding-top: 20px;
+		}
+		@media (min-width: $lg) {
+			grid-column: span 4;
+		}
+		&__item {
+			grid-column: span 2;
+			&-heading {
+				font-size: 17px;
+				line-height: 22px;
+				margin-bottom: 4px;
+				font-weight: 700;
+				letter-spacing: -0.408px;
+				@media (min-width: $lg) {
+					font-size: 24px;
+					line-height: 32px;
+					margin-bottom: 8px;
+					letter-spacing: 0.25px;
+				}
+			}
+			&-text {
+				font-size: 12px;
+				line-height: 16px;
+				color: var(--color-gray-dark);
+				@media (min-width: $lg) {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+		}
+	}
+	&__nav {
+		grid-column: span 4;
+		@media (max-width: $lg - 1px) {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+			justify-content: flex-end;
+			padding-bottom: 16px;
+			.btn-base {
+				align-self: flex-end;
+			}
+		}
+		@media (min-width: $lg) {
+			padding-right: 20px;
+			-webkit-gap: 10px 35px;
+			gap: 10px 35px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			grid-column: span 5;
+		}
+	}
+
+	&__description {
+		grid-column: 1 / -1;
+		padding-top: 8px;
+		@media (min-width: $lg) {
+			padding-left: calc(128px + 27px);
+			max-width: 812px;
+			box-sizing: content-box;
+		}
+		p {
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: -0.078px;
+			@media (min-width: $lg) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		&-inner {
+			grid-column-start: 3;
+		}
+	}
+}
+
+.swiper-slide {
+	&_collection {
+		@media (min-width: $lg) {
+			order: 2;
+		}
+	}
+	&_lists {
+		@media (min-width: $lg) {
+			order: 0;
+		}
+	}
+}
+
+.profile-content {
+	hr {
+		&:nth-child(2) {
+			order: 1;
+		}
+	}
+}

@@ -1,0 +1,194 @@
+include html/mixins
+
+doctype html
+block head
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+		title Posterstock
+		
+		meta(property="og:title" content="Posterstock")
+		meta(property="og:description" content="A social media designed for creating poster collections, and following friends and influencers.")
+		meta(property="og:image" content="img/opengraph.png")
+		meta(property="og:url" content="https://posterstock.co")
+		meta(property="og:type" content="website")
+		
+		link(rel="stylesheet", href="css/style.min.css")
+		link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+		link(rel="manifest" href="site.webmanifest")
+
+		// Google Tag Manager
+		script.
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-NGR8BSQ');
+		// End Google Tag Manager
+	body
+		// Google Tag Manager (noscript)
+		noscript
+			iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-NGR8BSQ" height="0" width="0" style="display:none;visibility:hidden")
+		// End Google Tag Manager (noscript)
+		
+		.wrapper
+			.container.grid-container.grid-container-main
+				aside.aside
+					.logo
+						a(href="https://posterstock.co")
+							img(src="img/logo.svg", width="34" height="46" alt="")
+					.banner
+						img(src="img/ad.jpg", alt="") 
+				main.content
+					section.section-head-profile
+						.is-lg-hidden.profile-heading rakeda
+						.grid-container.grid-container-15.user-bar
+							.user-bar__main
+								.user-bar__main__avatar
+									img(src="img/user-avatar.jpg", alt="")
+								.user-bar__main__info
+									.user-bar__main__name Ian Rakeda
+									.user-bar__main__username.is-lg-visible @rakeda
+									.user-bar__main__data
+										.user-bar__main__data-item
+											.user-bar__main__data-item-icon
+												+sprite("icon-posters")
+											| 324
+										.user-bar__main__data-item
+											.user-bar__main__data-item-icon
+												+sprite("icon-lists")
+											| 12
+							.user-bar__data.grid-container.grid-container-4
+								.user-bar__data__item
+									.user-bar__data__item-heading 23
+									.user-bar__data__item-text following
+								.user-bar__data__item
+									.user-bar__data__item-heading 3245
+									.user-bar__data__item-text followers
+							.user-bar__nav
+								a(href="#").btn.btn-base Follow
+								.user-menu.user-menu_profile
+									.user-menu__btn
+										+sprite("icon-menu")
+									ul.user-menu__main
+										li
+											a(href="#") Follow Kaylynn Westervelt
+										li
+											a(href="#") Follow
+										li
+											a(href="#") Copy poster link
+							.user-bar__description
+								p With the untimely dezath of his beloved wife still bitter in his mouth, John Wick, the expert former assassin, receives one final gift from.
+									a(href="#" target="_blank") rakeda.com
+					hr.is-lg-visible
+					ul.tabs.is-lg-hidden
+						li(tab-index="0").tabs__item.active Collection
+						li(tab-index="1").tabs__item Lists
+					.swiper.profile-content
+						.swiper-wrapper
+							.swiper-slide.swiper-slide_collection
+								section.section-posters.posters
+									.top-section.is-lg-visible
+										.heading Ian Rakeda’s collection
+									.posters__row.grid-container
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="https://image.tmdb.org/t/p/originalhttps://image.t….org/t/p/original/bIXi9zndfiFde1lAxylGcHuM2Zy.jpg", height="380" alt="")
+											.posters__item-heading Terminator Terminator Terminator Terminator
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="https://api.posterstock.co/images/2_10014_1692807378344.jpeg", alt="")
+											.posters__item-heading John Wick: Chapter 2
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Terminator
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading John Wick: Chapter 2
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Terminator
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Terminator
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading John Wick: Chapter 2
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Terminator
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading John Wick: Chapter 2
+											.posters__item-date 2019
+										.posters__item
+											.posters__item-photo
+												img(src="img/poster.jpg", alt="")
+											.posters__item-heading Joker
+											.posters__item-date 2019
+							hr.is-lg-visible
+							.swiper-slide.swiper-slide_lists
+								section.section-lists
+									.top-section.is-lg-visible
+										.heading Ian Rakeda’s lists
+										div
+											a(href="#") See all
+									.grid-container.grid-container-15.lists
+										.lists__item
+											.lists__item-img
+												img(src="https://image.tmdb.org/t/p/w342/jBUqI3FizsoDKdwRelG0nHZn19q.jpg", alt="")
+											.lists__item-heading Once Upon a Time… in Hollywood
+										.lists__item
+											.lists__item-img
+												img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAbFBMVEX////t7e1tbW2kpKS2trY3NzeSkpL8/PwkJCTIyMgSEhJJSUnb29sAAAB/f39bW1vn5+e+vr729vbR0dHV1dXs7Oyrq6uwsLDi4uKZmZlSUlKTk5NycnLU1NRgYGAeHh6Hh4cwMDA/Pz9XV1d+Cl9wAAACP0lEQVRoge2X25ajIBBFBQ0E5SLiPWk7PfP//zggJDG9WmMrPg37JVmC51BUcTGKAoFAIBAIBAIbKBAqDjVQEKojdMvajVtCKO2/ChF/+gXn8XeDmxg8TtaN8/zVoBUC+tOPJOf1qwESovZoUOgQqqlBLrzOUBQlnDdTg06I2IcuKLH9o9PMzYgphNQ8H8QAXEvS7jDoUOdebzg3CwATYiylEJ19rvps2GEQI3SxC0tnYTLScnAB1FmW7ammokYIyXGaimrakI8ZxkjrX3clG0vtUOMZ+6vWRzONqyEXhJKfm7jW97AYWp3pn1tE1nvZjwCZKUQV5z70D6NtV5cHSGaytEQex3FDKHjTDZc170+n0++PIWNgqBd3ApmdLBvOuZwko0Oz1Kkf1Qe08RzF+YeUixEk8BqrY68BgWPBgCqyuB00A+zIxiQXJUkMcqnTn7Ohv204NkFikXSp1+XrbCk3GUjVvt0qVHw1YWxYaSBffVZVzSE3Ym/gaqZMaPxuAlcBCJmZgK/0c7HE1pETQmZKJEvTFO3Vp0Z/JtvAOMBd1xb8ofXtQsAvQrZ8MdQO2Z5ElFrfbhWY0olDyVL7+KIdxA4DRYgbX06pvS2ONh1j7sorP9PzDgNwv1noAMYIMADmp2WMue2nvXmoJL1WKR3npABgtBwY8/mJ9gjgYUB1CF5WmQO4AB4GUc8Y92hwD+BpoBhL/enjewBPAxNCNf/GbynuW/fToP3r5TPzO65MDwT4rJ1AIBAIBAKB/4l/posaFPPuzAkAAAAASUVORK5CYII=", alt="")
+											.lists__item-heading Jean-Paul Marat förföljd och mördad så som det...
+										.lists__item
+											.lists__item-img
+												img(src="img/post-preview.jpg", alt="")
+											.lists__item-heading Fantasy
+								
+		script(src="js/app.min.js")

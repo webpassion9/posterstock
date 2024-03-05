@@ -1,0 +1,45 @@
+
+
+// Сетка
+.container {
+    max-width: calc(1557px + 30px);
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: $column-gap-mobile;
+    @media (min-width: $lg) {
+        grid-column-gap: $column-gap-small;
+    }
+    @media (min-width: $xl) {
+        grid-column-gap: $column-gap-base;
+    }
+    @media (min-width: $site-width) {
+        grid-column-gap: $column-gap-large;
+    }
+}
+
+.grid-container-main {
+    grid-template-columns: repeat(19, 1fr);
+}
+.grid-container-14 {
+    grid-template-columns: repeat(14, 1fr);
+}
+.grid-container-15 {
+    grid-template-columns: repeat(15, 1fr);
+}
+.grid-container-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+.grid-container-11 {
+    grid-template-columns: repeat(11, 1fr);
+}
+.grid-container-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-container-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
