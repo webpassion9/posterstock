@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="description" content="A social platform designed for creating poster collections, and following friends and influencers.">
-		<meta property="og:title" content="Posterstock">
-		<meta property="og:description" content="A social media designed for creating poster collections, and following friends and influencers.">
-		<meta property="og:image" content="img/opengraph.png">
-		<meta property="og:url" content="https://posterstock.co">
-		<meta property="og:type" content="website">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Posterstock</title>
-		<link rel="stylesheet" href="css/style.min.css">
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link rel="manifest" href="site.webmanifest">
-		<!-- Google Tag Manager-->
-		<script>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-NGR8BSQ');
-		</script>
-		<!-- End Google Tag Manager-->
+		<style>
+			body {
+				background: rgba(0,0,0,.016);
+			}
+			.page-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+			}
+			.page-list>li:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			.page-list__section {
+				padding: 25px 20px 20px;
+				background: rgba(255,255,255,1);
+				border: 1px solid #d9d9d9;
+				position: relative;
+				width: 100%;
+			}
+		</style>
 	</head>
-	<body>
-		<!-- Google Tag Manager (noscript)-->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGR8BSQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-		</noscript>
-		<!-- End Google Tag Manager (noscript)-->
-		<div class="wrapper wrapper_intro">
-			<div class="intro">
-				<div class="intro__cover"><img class="is-lg-hidden" src="img/cover_mobile.jpg" alt="Posterstock cover"><img class="is-lg-visible" src="img/cover.jpg" alt="Posterstock cover"></div>
-				<div class="intro__main">
-					<div class="intro__main-inner">
-						<div class="intro__logo"><a href="https://posterstock.co"><img src="img/logo.svg" alt="Logo"></a></div>
-						<div class="intro__heading">One step away from<br>your poster collection</div>
-						<div class="intro__app-btns">
-							<div class="intro__app-btns__item"><a href="#" target="_blank"><img src="img/appstore.svg" alt="Appstore"></a></div>
-							<div class="intro__app-btns__item"><a href="#" target="_blank"><img src="img/googleplay.svg" alt="Googleplay"></a></div>
-						</div>
-					</div>
-					<div class="intro__footer">The Posterstock website is a product developed by <a href="https://thedirection.org/" target="_blank">Thedirection&nbsp;OÜ</a>.<br>By using this website, you agree to abide by the <a href="https://thedirection.org/posterstock_privacy" target="_blank">Privacy&nbsp;Policy</a> and <a href="https://thedirection.org/posterstock_terms">Terms</a> outlined by the company.</div>
-				</div>
+	<body style="font-family: arial; margin: 0; padding: 30px;">
+		<h1 style="margin: 0 0 40px; padding: 0;">Page list:</h1>
+		<div class="page-list">
+			<div class="page-list__section">
+				<ul class="page-list" style="list-style: numeric; display: inline-block; list-style-position: inside; margin: 0; padding: 0;">
+					<li><a href="main.html" style="color: black; text-decoration: none;">main.html</a></li>
+					<li><a href="collection.html" style="color: black; text-decoration: none;">collection.html</a></li>
+					<li><a href="lists.html" style="color: black; text-decoration: none;">lists.html</a></li>
+					<li><a href="poster-opened.html" style="color: black; text-decoration: none;">poster-opened.html</a></li>
+					<li><a href="profile.html" style="color: black; text-decoration: none;">profile.html</a></li>
+				</ul>
 			</div>
 		</div>
-		<script src="js/app.min.js"></script>
 	</body>
 </html>
